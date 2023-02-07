@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Data"
+    android:background="#26C8B1">
+
+
+    <TextView
+        android:id="@+id/TVscandata"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:scrollbars="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/button"
+        android:enabled="true"
+        android:focusable="true"
+        android:fontFamily="@font/biorhyme"
+        android:longClickable="true"
+        android:paddingBottom="45dp"
+        android:paddingTop="20dp"
+        android:text="Scanned Data will Appear here"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textIsSelectable="true"
+        android:textSize="20sp" />
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/TVscandata"
+        android:layout_marginTop="-30dp"
+        android:layout_marginLeft="60dp"
+        android:orientation="horizontal"
+        android:layout_centerInParent="true">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_centerInParent="true"
+
+
+            >
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/open"
+                        android:visibility="gone"
+                android:layout_marginRight="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/button_copy"
+                android:text="Open"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/copy"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/button_copy"
+                android:text="Copy"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:textSize="20sp"/>
+
+
+    </RelativeLayout>
+    </LinearLayout>
+
+
+
+
+
+
+</RelativeLayout>
